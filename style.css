@@ -1,0 +1,222 @@
+@font-face {
+    font-family: myfont;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: MyFont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.container {
+    display: flex;
+    width: 50rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 1.2rem;
+    font-size: 16px;
+}
+
+.right {
+    width: 60%;
+}
+
+.left {
+    width: 40%;
+
+}
+
+.left img {
+    width: 105%;
+}
+
+ul {
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    margin-left: 31px;
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 1000;
+}
+
+label span {
+    position: relative;
+    left: 10.6rem;
+    top: 0.1rem;
+    font-size: 12px;
+}
+
+input {
+    padding: 1rem 0.9rem;
+    font-family: inherit;
+    border-radius: 0.4rem;
+    outline: none;
+    border: .1rem solid hsl(231, 7%, 60%);
+    margin-left: 5rem;
+    position: relative;
+    right: 3rem;
+}
+
+button {
+    font-family: inherit;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    border-radius: 0.4rem;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    position: relative;
+    right: 3rem;
+}
+
+button:hover {
+    /* background-color: hsl(4, 100%, 67%); */
+    background: linear-gradient(to right, rgba(255, 63, 124, 1) 40%, hsl(4, 100%, 67%)70%);
+    filter: drop-shadow(5px 5px 10px hsl(4, 100%, 67%));
+    border: 2px solid hsl(4, 100%, 67%);
+
+}
+
+li {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+p {
+    margin-left: 28px;
+}
+
+.h {
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+span {
+    position: relative;
+    bottom: 5px;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.sub {
+
+    background-color: #fff;
+    width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.sub h1 {
+    font-size: 3rem;
+    padding: 0px;
+    font-weight: 900;
+}
+
+.sub button {
+    width: 100%;
+    right: 5rem;
+}
+
+.text {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+@media (max-width:700px) {
+    .container {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+
+    .container h1 {
+        font-size: 40px;
+    }
+
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left img {
+        width: 100%;
+        content: url("./assets/images/illustration-sign-up-mobile.svg");
+
+    }
+
+    button {
+        width: 19rem;
+        position: relative;
+        right: 4rem;
+    }
+
+    input {
+        position: relative;
+        right: 4rem;
+        width: 19rem;
+    }
+
+    label {
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    label span {
+        position: relative;
+        left: 7.6rem;
+        top: 0.1rem;
+    }
+
+    span {
+        padding: 1px;
+    }
+
+    p {
+        margin: 10px;
+    }
+
+    ul li {
+        padding: 0px;
+    }
+
+    h1 {
+        font-weight: 1000;
+        margin-right: 2rem;
+        padding: 0px;
+    }
+
+    .sub button {
+        margin-top: 15rem;
+    }
+}
